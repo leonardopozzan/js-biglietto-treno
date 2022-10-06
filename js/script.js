@@ -20,6 +20,8 @@ eta = parseInt(prompt('Quanti anni hai?'))
 
 if (isNaN(km) || isNaN(eta)){
     alert('Dati errati, ricarica la pagina e inserisci solo numeri senza spazi o altri caratteri')
+    document.getElementById('my-title').innerHTML = 'Ricarica la pagina e inserisci i dati nel formato corretto per conoscere il prezzo del biglietto';
+    
 }else{
     price = euro_1Km * km;
     if (eta < 18){
